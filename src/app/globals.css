@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h1 {
+    @apply text-5xl font-bold;
+}
+
+.h2 {
+    @apply text-4xl font-bold;
+}
+
+.h3 {
+    @apply text-3xl font-bold;
+}
+
+.h4 {
+    @apply text-2xl font-bold;
+}
+
+@screen md {
+    .h1 {
+        @apply text-6xl;
+    }
+
+    .h2 {
+        @apply text-5xl;
+    }
+
+    .h3 {
+        @apply text-4xl;
+    }
+}
+
+.btn-sm {
+    @apply text-[15px] font-[550] inline-flex items-center justify-center rounded-full leading-5 whitespace-nowrap transition duration-150 ease-in-out;
+}
+
+.btn {
+    @apply px-5 py-2.5;
+}
+
+.btn-sm {
+    @apply px-4 py-2;
+}
+.mix-blend-lighten {
+    mix-blend-mode: lighten;
+}
+/* body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+} */
+ /* .conteiner-hero{
+    
+ } */
