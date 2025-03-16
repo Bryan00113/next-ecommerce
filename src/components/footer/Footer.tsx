@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 export const Footer = () => {
   return (
-    <footer>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <footer className="border-2 rounded-md pt-8 shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-gradient-to-tr from-sky-100 to-cyan-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6  ">
         {/* Blocks */}
         <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12">
           {/* 1st block */}
@@ -24,9 +24,8 @@ export const Footer = () => {
                     />
                   </Link>
                 </div>
-                <div className="text-sm text-slate-300">
-                  © Cruip.com <span className="text-slate-500">-</span> All
-                  rights reserved.
+                <div className="text-sm text-slate-500">
+                  © Cruip.com <span className="">-</span> All rights reserved.
                 </div>
               </div>
               {/* Social links */}
@@ -85,11 +84,11 @@ export const Footer = () => {
 
           {/* 2nd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-50 font-medium mb-2">Products</h6>
+            <h6 className="text-sm text-blue-500 font-medium mb-2">Products</h6>
             <ul className="text-sm space-y-2">
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Features
@@ -97,7 +96,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Integrations
@@ -105,7 +104,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Pricing & Plans
@@ -113,7 +112,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Changelog
@@ -121,7 +120,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Our method
@@ -132,11 +131,11 @@ export const Footer = () => {
 
           {/* 3rd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-50 font-medium mb-2">Company</h6>
+            <h6 className="text-sm text-blue-500 font-medium mb-2">Company</h6>
             <ul className="text-sm space-y-2">
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   About us
@@ -144,7 +143,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Diversity & Inclusion
@@ -152,7 +151,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Blog
@@ -160,7 +159,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Careers
@@ -168,7 +167,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Financial statements
@@ -179,13 +178,13 @@ export const Footer = () => {
 
           {/* 4th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-50 font-medium mb-2">
+            <h6 className="text-sm text-blue-500 font-medium mb-2">
               Resources
             </h6>
             <ul className="text-sm space-y-2">
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Community
@@ -193,7 +192,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Terms of service
@@ -201,7 +200,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Report a vulnerability
@@ -212,11 +211,11 @@ export const Footer = () => {
 
           {/* 5th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-50 font-medium mb-2">Legals</h6>
+            <h6 className="text-sm text-blue-500 font-medium mb-2">Legals</h6>
             <ul className="text-sm space-y-2">
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Refund policy
@@ -224,7 +223,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Terms & Conditions
@@ -232,7 +231,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Privacy policy
@@ -240,7 +239,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out"
+                  className="text-black hover:text-blue-400 transition duration-150 ease-in-out"
                   href="#0"
                 >
                   Brand Kit

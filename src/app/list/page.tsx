@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 relative">
+    <div className="px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 relative b">
       {/* campaign */}
 
       <div className=" hidden bg-gradient-to-r from-cyan-50 to-blue-100 sm:flex justify-between h-[280px] shadow-blue-100 shadow-md px-4">

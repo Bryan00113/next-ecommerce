@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "Lama Dev E-Commerce Application",
   description: "A complete e-commerce application with Next.js and Wix",
 };
-const poppins = Poppins({ subsets: ["latin"], weight: ["500", "600", "700"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 export default function RootLayout({
   children,
 }: Readonly<{
