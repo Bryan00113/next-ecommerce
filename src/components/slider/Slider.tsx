@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-import "./style.css";
+import "./style_Slider_Hero.css";
 
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";

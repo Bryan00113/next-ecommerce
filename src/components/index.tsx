@@ -8,3 +8,4 @@ export * from "./slider/Slider";
 export * from "./ui/hero/Hero";
 export * from "./filter/Filter";
 export * from "./productList/ProductList";
+export * from "./anuncios_Carrusel/Carousel";
