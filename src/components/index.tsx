@@ -9,3 +9,4 @@ export * from "./ui/hero/Hero";
 export * from "./filter/Filter";
 export * from "./productList/ProductList";
 export * from "./anuncios_Carrusel/Carousel";
+export * from "./navbar/NavigationBar";
