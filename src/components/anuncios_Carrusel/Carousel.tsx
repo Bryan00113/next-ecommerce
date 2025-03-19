@@ -19,7 +19,7 @@ export const Carousel = () => {
       tendencias de productos
       <>
         <Swiper
-          slidesPerView={0}
+          slidesPerView={1}
           spaceBetween={1}
           pagination={{
             clickable: true,
@@ -27,7 +27,7 @@ export const Carousel = () => {
           modules={[Pagination]}
           className="mySwiper" // Cambiado de styles.mySwiper a clase CSS directa
           breakpoints={{
-            720: {
+            540: {
               slidesPerView: 2,
             },
             920: {

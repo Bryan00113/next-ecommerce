@@ -1,4 +1,4 @@
-import { Carousel, Hero, ProductList } from "@/components";
+import { Carousel, Hero } from "@/components";
 
 import React from "react";
 import Image from "next/image";
