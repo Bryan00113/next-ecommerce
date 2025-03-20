@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Footer, Navbar } from "@/components";
 import { Poppins } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Lama Dev E-Commerce Application",
@@ -24,6 +24,7 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>

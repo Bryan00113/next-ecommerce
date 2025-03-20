@@ -8,7 +8,7 @@ export const Hero = () => {
     <section className="relative px-3 overflow-hidden  h-[864px] ">
       {/* Bg */}
       <div
-        className="absolute overflow-hidden h-full  inset-0  rounded-lg lg2:rounded-bl-[100px] mb-28 md:mb-0 pointer-events-none bg-gradient-to-tr from-blue-600 to-blue-500 -z-10"
+        className="absolute overflow-hidden h-full  inset-0   lg2:rounded-bl-[100px] mb-28 md:mb-0 pointer-events-none bg-gradient-to-tr from-blue-600 to-blue-500 -z-10"
         aria-hidden="true"
       />
       {/* Image */}
