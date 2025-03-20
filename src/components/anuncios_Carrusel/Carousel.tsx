@@ -6,16 +6,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-// import "../slider/style_Slider_Hero.css"; // Comenta esta línea
-import "./style.css"; // Descomenta esta línea
-// import "./style2.css";
+import "swiper/css/navigation";
+import "./style.css";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
+
 export const Carousel = () => {
   return (
-    <div className="text-2xl font-bold my-8 h-[320px] ">
+    <div className="text-2xl font-bold my-8 h-[320px] relative">
       tendencias de productos
       <>
         <Swiper
@@ -24,14 +24,22 @@ export const Carousel = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
-          className="mySwiper" // Cambiado de styles.mySwiper a clase CSS directa
+          navigation={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination, Navigation, Autoplay]}
+          className="mySwiper"
           breakpoints={{
             540: {
               slidesPerView: 2,
             },
-            920: {
+            720: {
               slidesPerView: 3,
+            },
+            1020: {
+              slidesPerView: 4,
             },
           }}
         >
@@ -40,51 +48,79 @@ export const Carousel = () => {
               src="/ropa_tendencia/blusa_blanca.jpg"
               alt="imagen de tendencias"
               width={200}
-              height={100}
+              height={200}
               style={{
-                // borderRadius: 0,
                 aspectRatio: "2/2",
                 height: "80%",
-                width: "70%",
+                width: "80%",
               }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/ropa_tendencia/blusa_blanca.jpg"
+              src="/ropa_tendencia/camisa_blanca.jpg"
               alt="imagen de tendencias"
               width={200}
               height={100}
               style={{
-                // borderRadius: 0,
                 aspectRatio: "2/2",
                 height: "80%",
-                width: "70%",
+                width: "80%",
               }}
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
-              src="/ropa_tendencia/blusa_blanca.jpg"
+              src="/ropa_tendencia/blusa.jpg"
               alt="imagen de tendencias"
               width={200}
               height={100}
               style={{
-                // borderRadius: 0,
                 aspectRatio: "2/2",
                 height: "80%",
-                width: "70%",
+                width: "80%",
               }}
             />
           </SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/ropa_tendencia/Blusa_deRayas.jpg"
+              alt="imagen de tendencias"
+              width={200}
+              height={100}
+              style={{
+                aspectRatio: "2/2",
+                height: "80%",
+                width: "80%",
+              }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/ropa_tendencia/Camisa_Negra.jpg"
+              alt="imagen de tendencias"
+              width={200}
+              height={100}
+              style={{
+                aspectRatio: "2/2",
+                height: "80%",
+                width: "80%",
+              }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src="/ropa_tendencia/camisa_deMujer.jpg"
+              alt="imagen de tendencias"
+              width={200}
+              height={100}
+              style={{
+                aspectRatio: "2/2",
+                height: "80%",
+                width: "80%",
+              }}
+            />
+          </SwiperSlide>
         </Swiper>
       </>
     </div>

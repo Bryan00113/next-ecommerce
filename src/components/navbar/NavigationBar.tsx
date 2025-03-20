@@ -13,11 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+
 import { Brain, Heart, LineChart, Medal, Settings, User } from "lucide-react";
 
 const navigationItems = [
